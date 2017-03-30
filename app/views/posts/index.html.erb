@@ -1,4 +1,10 @@
-<% @posts.each do |p| %>
-   <%= p.title %> <br>
-   <%= p.body %>
-<% end %>
+<div id="outer" %>
+  <% @posts.each_with_index do |p, index| %>
+    <div id="inner">
+      <%= index + 1%>번째울림<br>
+      <%= p.title %><br>
+      <%= p.body %><br>
+    </div>
+    <br>
+  <% end %>
+</div>
