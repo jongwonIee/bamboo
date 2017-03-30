@@ -1,18 +1,29 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.form{
+#outer{
   margin: 0 auto;
   text-align: center;
   width: 300px;
 }
 
-.inner{
-  border-bottom: solid black;
-}
-
-input#post_body{
+#inner{
+  border: solid black;
 }
 
 input#post_title{
+  color: #484848;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px;
 }
+
+textarea#post_body{
+  color: #484848;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px;
+  resize: none;
+}
+
+

@@ -1,4 +1,10 @@
-<% @posts.each do |p| %>
-   <%= p.title %> <br>
-   <%= p.body %>
-<% end %>
+<div id="outer">
+  <% @posts.each_with_index do |p, index| %>
+     <div id="inner">
+       <%= index + 1 %>번째 울림<br>
+       제목:<%= p.title %><br>
+       내용:<%= p.body %>
+     </div>
+      <br>
+  <% end %>
+</div>
