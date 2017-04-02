@@ -6,6 +6,8 @@ class PostsController < ApplicationController
   def new
     @post = Post.new
     @posts = Post.all
+    @minimum_length = Post.validators_on( :title ).first.options[:minimum]
+    @maximum_length = Post.validators_on( :body ).first.options[:maximum]
   end
 
   def create

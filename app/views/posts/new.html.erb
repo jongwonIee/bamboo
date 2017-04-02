@@ -1,9 +1,14 @@
 <div class="form">
   <%= form_for @post do |f| %>
       제목:<br>
-      <%= f.text_field :title, size: 8 %><br>
+      <%= f.text_field :title, minlength: @minimum_length, size: 10 %><br>
+
+      Chars left: <span id="title_counter" data-minimum-length="<%= @minimum_length %>"><%= @minimum_length %></span>
       내용:<br>
-      <%= f.text_area :body, rows: 5 %><br>
+      <%= f.text_area :body, maxlength: @maximum_length, rows: 5 %><br>
+
+      Chars left: <span id="body_counter" data-maximum-length="<%= @maximum_length %>"><%= @maximum_length %></span>
+      <br>
       <%= f.submit 'submit' %>
   <% end %>
 </div>
@@ -18,3 +23,28 @@
       <br>
   <% end %>
 </div>
+
+
+<script>
+  $(document).ready(function() {
+    var title = $("#post_title");
+    var title_counter     = $("#title_counter");
+    var min_length  = title_counter.data("minimum-length");
+
+    title.keyup(function() {
+      title_counter.text($(this).val().replace(/[^A-Z]/gi, "").length + '/' + min_length);
+    });
+
+  });
+
+  $(document).ready(function() {
+    var body = $("#post_body");
+    var body_counter     = $("#body_counter");
+    var max_length  = body_counter.data("maximum-length");
+
+    body.keyup(function() {
+      body_counter.text(max_length - $(this).val().replace(/[^A-Z]/gi, "").length);
+    });
+
+  });
+</script>
