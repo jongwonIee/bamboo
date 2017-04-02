@@ -14,8 +14,7 @@ class PostsController < ApplicationController
     post = Post.new(post_params)
     post.save
     # redirect_to :main
-    # redirect_to :new_post
-    redirect_to :back
+    redirect_to :new_post
   end
 
   private

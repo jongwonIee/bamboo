@@ -1,5 +1,5 @@
 <div class="form">
-  <%= form_for @post do |f| %>
+  <%= form_for @post, html: {novalidate: 'novalidate'} do |f| %>
       제목:<br>
       <%= f.text_field :title, minlength: @minimum_length, size: 10 %><br>
 
@@ -32,7 +32,7 @@
     var min_length  = title_counter.data("minimum-length");
 
     title.keyup(function() {
-      title_counter.text($(this).val().replace(/[^A-Z]/gi, "").length + '/' + min_length);
+      title_counter.text($(this).val().replace(/ /g,'').length + '/' + min_length);
     });
 
   });
@@ -43,8 +43,18 @@
     var max_length  = body_counter.data("maximum-length");
 
     body.keyup(function() {
-      body_counter.text(max_length - $(this).val().replace(/[^A-Z]/gi, "").length);
+      body_counter.text(max_length - $(this).val().replace(/ /g,'').length);
     });
 
+  });
+
+  $('#post_title').submit(function(){
+    if(validNum()){
+      console.log('true');
+      return true;
+    }else{
+      console.log('false');
+      return false;
+    }
   });
 </script>
