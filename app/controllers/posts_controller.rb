@@ -12,9 +12,12 @@ class PostsController < ApplicationController
 
   def create
     post = Post.new(post_params)
-    post.save
-    # redirect_to :main
-    redirect_to :new_post
+    if post.save
+      redirect_to :new_post
+    else
+      flash[:notice] = "글자 수"
+      redirect_to :new_post
+    end
   end
 
   private

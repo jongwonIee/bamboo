@@ -2593,3 +2593,1101 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.2ms)
 
 
+Started POST "/posts" for ::1 at 2017-04-02 17:11:02 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cONcN/UFF+LWdNjPEoNmNXQzvU2YhNfmOmMe0u3rBjawGAK55XQ64lNV+zrBE3F5FnP/aI0QGGerk0GIUni8tA==", "post"=>{"title"=>"sdfsd sfㅇㄴㄹㅇㄴㄹㄴㅇ", "body"=>"ㄴㅇㄹㅇㄴㄹ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sdfsd sfㅇㄴㄹㅇㄴㄹㄴㅇ"], ["body", "ㄴㅇㄹㅇㄴㄹ"], ["created_at", 2017-04-02 08:11:02 UTC], ["updated_at", 2017-04-02 08:11:02 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-02 17:11:02 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-02 17:11:21 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F3vrlxs6h/smb97P9/5hi4F4wSK5PzkB5Z79j2GcoqXXgLUZC0uq+6NO/TokbnbH4ziDB6yr9oB0bqLV3g8YJw==", "post"=>{"title"=>"ㄴㅇㄹㅇㄴ       ", "body"=>"ㄴㅇㄹㄴㅇㄹㄴ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-02 17:11:21 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-03 05:28:23 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 85ms (Views: 71.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 05:48:28 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-03 05:48:39 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 64ms (Views: 62.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 06:10:19 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 06:19:10 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 32ms (Views: 29.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 19:35:42 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 80ms (Views: 68.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 19:37:11 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 40ms (Views: 25.7ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 19:37:14 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8N0uQqriYzt1EYNjFOWIJygZ7qDmrSH/t3ZjVMcJtnMwJnDMupNOO/AwoJbHdZ9rSlmshfM57n4mhjwOeJoM8Q==", "post"=>{"title"=>"sdfsf", "body"=>"dsfds"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+No template found for PostsController#create, rendering head :no_content
+Completed 204 No Content in 48ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 19:37:21 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (2.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 19:37:25 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ehIU7y+uiX/+XIYwMprBKqoNJPI/Heac99ttDxyh0u+66UphP9+kf3t9pcXhCtZmyE1m1yqJKR1mKzJVozJobQ==", "post"=>{"title"=>"sdf", "body"=>"sdf"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+No template found for PostsController#create, rendering head :no_content
+Completed 204 No Content in 45ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 19:39:40 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 36ms (Views: 26.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 19:39:44 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y/FCdcK8FNPrKyA05P0TwamySWawINXcXgCLlzqv0mWjChz70s05024KA8E3bQSNy/ILQ6W0Gl3P8NTNhTxo5w==", "post"=>{"title"=>"ㄴㅇㄹ", "body"=>"ㄴㅇㄹ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 19:39:44 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 19:41:07 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 19:41:11 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 19:41:13 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E9c/CjsGSE6/V/cEWAQv9NmvW4NxvTfF3MVUMa0qbwPTLGGEK3dlTjp21PGLlDi4u+8ZpmQp+ERNNQtrErnVgQ==", "post"=>{"title"=>"ㅇㅇㄹㄴ", "body"=>"ㅇㄴㄹ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 19:41:13 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 19:41:35 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 31ms (Views: 22.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 19:41:38 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1kMbNJKrWzZ2vwFfD11mMXNpF1bPYnkCXXGLc+baSNAWuEW6gtp2NvOeIqrczXF9ESlVc9r2toPMgdQpWUnyUg==", "post"=>{"title"=>"ㄴㅇㄹㄴㄴㅇㄹ", "body"=>"ㄴㅇㄹㄴ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 19:41:38 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 19:51:10 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 28ms (Views: 19.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 19:51:27 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 19:53:28 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 19:54:29 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 19:54:36 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:00:04 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:01:40 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:08:05 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:08:17 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:09:08 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:09:48 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:10:26 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:10:28 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6vONoMNDxEM1/QCa+BLvjR8KfIg6m9nRrBus7RWlzisqCNMu0zLpQ7DcI28rgvjBfUo+rS8PFlA96/O3qjZ0qQ==", "post"=>{"title"=>"ㄴㅇㄹㅇㄹ", "body"=>""}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:10:28 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:10:37 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9Pzrd39T/tsNyp6wGIB5RrLpEG2Cd5XDhGfcExK6duA0B7X5byLT24jrvUXLEG4K0KlSSJfjWkIVl4NJrSnMYg==", "post"=>{"title"=>"ㄴㅇㄹ", "body"=>"ㄴㅇㄹ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:10:37 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:11:11 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:12:41 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:14:30 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:15:55 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:17:53 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:18:30 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:19:28 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:19:37 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:20:52 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:21:08 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:22:24 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:22:29 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O+lDXuBTTUCg8Z/ye2RYpQvYa1Wb+r/VrNYOWGXGnz/7Eh3Q8CJgQCXQvAeo9E/paZgpcI5ucFQ9JlEC2lUlvQ==", "post"=>{"title"=>"ㄴㅇㄹㅇㄴㄴㅇㄹㅇㄴㄹㅇㄴㄹ", "body"=>"ㄴㅇㄹㅇㄴㄹㄹㄴㅇ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ㄴㅇㄹㅇㄴㄴㅇㄹㅇㄴㄹㅇㄴㄹ"], ["body", "ㄴㅇㄹㅇㄴㄹㄹㄴㅇ"], ["created_at", 2017-04-03 11:22:29 UTC], ["updated_at", 2017-04-03 11:22:29 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:22:29 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:22:38 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TnqHrfREgHC3hPGtHyVb6IVswREFKwVft7pizOaftIOOgdkj5DWtcDKl0ljMtUyk5yyDNBC/yt4mSj2WWQwOAQ==", "post"=>{"title"=>"ㄴㅇㄹ", "body"=>"ㄴㅇㄹㄴㅇ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:22:38 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:22:44 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ws0W1BgUIxwq8Kx5+2+5UTqsQlsIB8lxm/UIsNT3b5iaNkhaCGUOHK/Rj4wo/64dWOwAfh2TBvAKBVfqa2TVGg==", "post"=>{"title"=>"ㄴㅇㄹㄴㄴㅇㄹㄴㅇㄹㄴㅇㄹ", "body"=>"ㄴㅇㄹㄴㅇㄹㄹㄴ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ㄴㅇㄹㄴㄴㅇㄹㄴㅇㄹㄴㅇㄹ"], ["body", "ㄴㅇㄹㄴㅇㄹㄹㄴ"], ["created_at", 2017-04-03 11:22:44 UTC], ["updated_at", 2017-04-03 11:22:44 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 3ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:22:44 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:27:48 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:28:47 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:28:56 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:29:08 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xdOze85oQzLTGLP7SCyZ7sV2R80jGuyf/qWErIP0MY8FKO313hluMlY5kA6bvI6ipzYF6DaOIx5vVdv2PGeLDQ==", "post"=>{"title"=>"ㅇㄴㄹㅇㄴㄹㅇㄴㄹㄴㄹ", "body"=>"ㄴㅇㄹㄴㅇㄹㄴㅇㄹ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ㅇㄴㄹㅇㄴㄹㅇㄴㄹㄴㄹ"], ["body", "ㄴㅇㄹㄴㅇㄹㄴㅇㄹ"], ["created_at", 2017-04-03 11:29:08 UTC], ["updated_at", 2017-04-03 11:29:08 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:29:08 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:29:11 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MfW3UkalebwiVb9BLgJIu9s/ywtVhpuP1gm1shx9a+LxDuncVtRUvKd0nLT9kl/3uX+JLkASVA5H+eroo+7RYA==", "post"=>{"title"=>"", "body"=>""}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:29:11 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:29:42 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:29:46 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GZHMm5AghmpNeBQokfVqQAprqKCCBrAy3O2m0jfGezTZapIVgFGrashZN91CZX0MaCvqhZeSf7NNHfmIiFXBtg==", "post"=>{"title"=>"sdfsdfsdfsdf", "body"=>"sdfsdfsd"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sdfsdfsdfsdf"], ["body", "sdfsdfsd"], ["created_at", 2017-04-03 11:29:46 UTC], ["updated_at", 2017-04-03 11:29:46 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:29:46 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:29:54 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sSzM3IAcVs/JncI3TMg0N9U9Nlk9gcIG1RLMi04Jcsxx15JSkG17z0y84cKfWCN7t310fCgVDYdE4pPR8ZrITg==", "post"=>{"title"=>"sdfsdfsdfsdfsf", "body"=>"sdf"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sdfsdfsdfsdfsf"], ["body", "sdf"], ["created_at", 2017-04-03 11:29:54 UTC], ["updated_at", 2017-04-03 11:29:54 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:29:54 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:31:00 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 34ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:32:11 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:32:32 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:33:01 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:33:31 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:33:33 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3AjzrfWvFVj08mJLSquQ+Oy6vTRQyZnX3/AsfNeDCd0c860j5d44WHHTQb6ZO4e0jvr/EUVdVlZOAHMmaBCzXw==", "post"=>{"title"=>"ㄴㅇㄹㅇㄴㄹ", "body"=>"ㄴㄹㄴㅇㄹ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:33:33 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:33:36 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"goxObzaTp0z/TH1WQLdNHHhfsZTh4Q9aPua13v06NvNCdxDhJuKKTHptXqOTJ1pQGh/zsfR1wNuvFuqEQqmMcQ==", "post"=>{"title"=>"ㄴㅇㄹㄴㅇ", "body"=>"ㄴㅇㄹㅇㄴ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:33:36 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:33:58 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:34:04 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1a2D3z+whpXy1xyymIXeOe6sAHH9S/9jI7qVqNFmojYVVt1RL8GrlXf2P0dLFcl1jOxCVOjfMOKySsrybvUYtA==", "post"=>{"title"=>"ㄴㅇㄹㅇㄹㄴㅇㄹㄴㅇㄹ", "body"=>"ㄴㅇㄹㅇㄴㄹ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ㄴㅇㄹㅇㄹㄴㅇㄹㄴㅇㄹ"], ["body", "ㄴㅇㄹㅇㄴㄹ"], ["created_at", 2017-04-03 11:34:04 UTC], ["updated_at", 2017-04-03 11:34:04 UTC]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 6ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:34:04 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:35:28 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:35:30 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fOzuCkJVmIRX99iQCxN1eZTvs1ztKNr1FGmh2sUnuey8F7CEUiS1hNLW+2XYg2I19q/xefi8FXSFmf6AerQDbg==", "post"=>{"title"=>"ㄴㄹㅇㄹ", "body"=>"ㄴㅇㄹㅇㄴㄹㄹㄴ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 10ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:35:30 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:35:40 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:35:42 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lEAXzD5mSrzmgDcz/as0D3yu/kwAJ7DiaJUjd8s55Q9Uu0lCLhdnvGOhFMYuOyNDHu68aRWzf2P5ZXwtdKpfjQ==", "post"=>{"title"=>"ㄴㅇㄹㄴㅇㄹ", "body"=>"ㄴㅇㄹㅇㄴㄹㅇㄴㄹ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:35:42 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:36:19 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:36:21 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+7LtNrhVR22QR/QCW8LbkQR1teOt3Wuwo8LqF1TiBUg7SbO4qCRqbRVm1/eIUszdZjX3xrhJpDEyMrVN63G/yg==", "post"=>{"title"=>"ㅇㄴㄴㅇㄴ", "body"=>"ㅇㄴㄹㄴㅇㄹㄴㅇㄹ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:36:21 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:36:24 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WCQDXK5DEOTVkf5fMHzkQyTtVJqsdEZhHEV/myXG62WY313SvjI95FCw3arj7PMPRq0Wv7ngieCNtSDBmlVR5w==", "post"=>{"title"=>"ㅇㄴㄹㄴ", "body"=>"ㄴㅇㄹㅇㄴㄹㄹㄴㄹ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:36:24 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:36:32 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:38:28 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:39:11 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:39:36 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:41:58 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:42:13 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:42:25 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:45:10 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:45:47 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:45:54 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AvYYu1nxot/qjNiOv3hLZG9/o/5sjrqyLoNyQsyqQLvCDUY1SYCP32+t+3ts6FwoDT/h23kadTO/cy0Yczn6OQ==", "post"=>{"title"=>"ㅇㄴㄹㅇㄴㄹㄴㅇㄹㅇㄴㄹ", "body"=>"ㄴㅇㄹㄴㅇㄹㄹ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ㅇㄴㄹㅇㄴㄹㄴㅇㄹㅇㄴㄹ"], ["body", "ㄴㅇㄹㄴㅇㄹㄹ"], ["created_at", 2017-04-03 11:45:54 UTC], ["updated_at", 2017-04-03 11:45:54 UTC]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 5ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:45:54 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:46:06 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pUYFoOLZ6OA6ZdrcyNeydEJb1Yltsjh9ZbuESZgZ82xlvVsu8qjF4L9E+SkbR6U4IBuXrHgm9/z0S9sTJ4pJ7g==", "post"=>{"title"=>"ㅇㄴㄹㄴㄴㅇㄴㅇㄹㄴㅇㄹㄹㅇㄴㄹ", "body"=>"ㄴㅇㄹㅇㄴㄹㄴㅇㄹㄴㅇ"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ㅇㄴㄹㄴㄴㅇㄴㅇㄹㄴㅇㄹㄹㅇㄴㄹ"], ["body", "ㄴㅇㄹㅇㄴㄹㄴㅇㄹㄴㅇ"], ["created_at", 2017-04-03 11:46:06 UTC], ["updated_at", 2017-04-03 11:46:06 UTC]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 6ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:46:06 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:48:46 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:48:51 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n3Iu24Gn+AV+H5PD9pd3Wfxtyt5INixAB5c1jEW/NdxfiXBVkdbVBfs+sDYlB2AVni2I+12i48GWZ2rW+iyPXg==", "post"=>{"title"=>"sdfsdfsdfsdf", "body"=>"sdfdsfdsffsd"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sdfsdfsdfsdf"], ["body", "sdfdsfdsffsd"], ["created_at", 2017-04-03 11:48:51 UTC], ["updated_at", 2017-04-03 11:48:51 UTC]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 5ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:48:51 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:48:59 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JheLmevdIGCP9Dack+z4U/1Z9vT1zSDDNvsdA9LwjODm7NUX+6wNYArVFWlAfO8fnxm00eBZ70KnC0JZbWM2Yg==", "post"=>{"title"=>"dsfdsffdsdf", "body"=>"sdfdsf"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "dsfdsffdsdf"], ["body", "sdfdsf"], ["created_at", 2017-04-03 11:48:59 UTC], ["updated_at", 2017-04-03 11:48:59 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:48:59 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 20:49:07 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tPRXacwZoXr8HirUTfzX+WqQlzDLjzx+rx/L4UKcfWR0Dwnn3GiMenk/CSGebMC1CNDVFd4b8/8+75S7/Q/H5g==", "post"=>{"title"=>"sdfdsdsfsfdsfsff", "body"=>"sdfdsf"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sdfdsdsfsfdsfsff"], ["body", "sdfdsf"], ["created_at", 2017-04-03 11:49:07 UTC], ["updated_at", 2017-04-03 11:49:07 UTC]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 5ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:49:07 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:49:57 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:50:32 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:50:44 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:51:28 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 20:51:59 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 21:01:55 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 21:02:24 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 53ms (Views: 48.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 21:03:15 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 45ms (Views: 39.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 21:03:55 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 61ms (Views: 56.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 21:04:32 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 51ms (Views: 46.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 21:04:56 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 46ms (Views: 42.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 21:05:11 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 44ms (Views: 39.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 21:06:51 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 49ms (Views: 44.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 21:07:19 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 67ms (Views: 61.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 21:08:51 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 21:11:39 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 21:11:56 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 21:12:14 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-04-03 21:13:55 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zcbct9XsIZ3lMb45Hk0uLq7mQWPUjVR5s0q9BgJyYHoNPYI5xZ0MnWAQnczN3TlizKYDRsEZm/giuuJcveHa+A==", "post"=>{"title"=>"english eldfmdk", "body"=>"제목이 10글자미만인 경우 전송이 안됩니다. 그리고 몇글자 남았는지 세줍니다. 10글자 이상 적으면 제출해도된다는 멘트도 날려줍니다. 영어도 물론 됩니다."}, "commit"=>"submit"}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "english eldfmdk"], ["body", "제목이 10글자미만인 경우 전송이 안됩니다. 그리고 몇글자 남았는지 세줍니다. 10글자 이상 적으면 제출해도된다는 멘트도 날려줍니다. 영어도 물론 됩니다."], ["created_at", 2017-04-03 12:13:55 UTC], ["updated_at", 2017-04-03 12:13:55 UTC]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 9ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 21:13:55 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 42ms (Views: 38.7ms | ActiveRecord: 0.6ms)
+
+
