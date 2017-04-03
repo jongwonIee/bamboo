@@ -3691,3 +3691,20 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 42ms (Views: 38.7ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/posts/new" for ::1 at 2017-04-03 21:24:31 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 104ms (Views: 101.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-03 21:25:32 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/new.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 311ms (Views: 294.2ms | ActiveRecord: 0.8ms)
+
+
