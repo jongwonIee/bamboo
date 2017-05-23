@@ -15,18 +15,7 @@
   <% end %>
 </div>
 <br>
-<div id="outer" %>
-  <% @posts.each_with_index do |p, index| %>
-      <div id="inner">
-        <%= index + 1%>번째울림<br>
-        <%= p.category.name %><br>
-        <%= p.title %><br>
-        <%= p.body %><br>
-      </div>
-      <br>
-  <% end %>
-</div>
-
+<%= render 'index' %>
 <script>
   $(document).ready(function() {
     category_validation();
@@ -100,4 +89,6 @@
       });
     }
   });
+
+
 </script>

@@ -1,10 +1,17 @@
 Rails.application.routes.draw do
 
-  get 'main' => 'posts#index'
+  get 'signup', to: 'users#new', as: 'signup'
+  get 'login', to: 'sessions#new', as: 'login'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
 
-  post 'posts' => 'posts#create'
-  get 'posts/new' => 'posts#new', as: 'new_post'
+  resources :users
+  resources :sessions
+  resources :posts
 
-  root 'posts#index'
+  root 'posts#new'
+
+  #favoites
+  post 'users/favorites_add'
+  post 'users/favorites_delete'
 
 end
