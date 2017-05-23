@@ -36,9 +36,8 @@
     function category_validation() {
       var category = $("#post_category_id");
       if (category.val().length == 1) {
-        console.log('true');
         return true;
-      }else{
+      } else {
         return false;
       }
     }
@@ -55,11 +54,15 @@
 
     $('#new_post').submit(function(){
       var category_message = $("#category_message");
+      if (category_validation()){
+        category_message.text("");
+      }else{
+        category_message.text("카테고리를 선택해주세요!");
+      }
       if(title_validation() && category_validation()){
         console.log('true');
         return true;
       }else{
-        category_message.text("카테고리를 선택해주세요!");
         console.log('false');
         return false;
       }
