@@ -6,8 +6,9 @@ class PostsController < ApplicationController
   def new
     @post = Post.new
     @posts = Post.all
-    @minimum_length = Post.validators_on( :title ).first.options[:minimum]
-    @maximum_length = Post.validators_on( :body ).first.options[:maximum]
+    @categories = Category.all
+    @minimum_length = Post.validators_on(:title ).first.options[:minimum]
+    @maximum_length = Post.validators_on(:body ).first.options[:maximum]
   end
 
   def create
@@ -22,6 +23,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title, :body)
+    params.require(:post).permit(:title, :body, :category_id)
   end
 end

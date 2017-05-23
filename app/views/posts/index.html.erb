@@ -1,6 +1,7 @@
 <div id="outer" %>
   <% @posts.each_with_index do |p, index| %>
     <div id="inner">
+      <%= p.category.name %><br>
       <%= index + 1%>번째울림<br>
       <%= p.title %><br>
       <%= p.body %><br>
